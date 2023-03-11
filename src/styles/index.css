@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(238, 244, 247);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.entete{
+  width: 100%;
+  top: 0%;
+  position:absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.entete .titre{
+  width: 20%;
+  text-align: center;
+}
+.entete .titre h1{
+  font-size: 30px;
+  font-weight: 809;
+  margin:10px;
+}
+.entete .nav{
+  width: 70%;
+  text-align: right;
+}
+
+.navigation .TopMenu{
+  display: inline-flex;
+}
+.navigation .TopMenu li{
+  margin-inline:20px;
+  font-size: 18px;
+  font-weight: 540;
+  list-style: none;
+}
+
+.navigation li:hover{
+  font-weight: 700;
+  cursor: pointer;
+  color:rgb(230, 169, 1);
+  text-decoration:overline;
+}
+
+.btn_mobile{
+  display: none;
+}
+
+
+.corps{
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  margin-top:50px;
+  display: flex;
+}
+.corps .gauche{
+  width: 50%;
+}
+
+.corps .droite{
+  width: 50%;
+}
+.corps .droite img{
+  width: 65%;
+}
+.corps .droite img:hover{
+  rotate: 5deg;
+}
+
+.corps .gauche h1{
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+.corps .gauche .present{
+  font-size:50px;
+  margin: 0px;
+  color:rgb(185, 207, 226);
+}
+.corps .gauche .present span{
+  font-size: 70px;
+  margin: 0px;
+  color:rgb(91, 107, 128);
+}
+.corps .gauche .dev{
+  font-size: 40px;
+  font-weight: 500;
+  font-family:'Courier New', Courier, monospace;
+  margin:10px;
+  color:rgb(230, 134, 10);
+}
+.corps .gauche p{
+  font-size: 20px;
+}
+.corps .gauche .boutons .btncontact{
+  background-color: rgb(115, 134, 170);
+  border:none;
+  padding:10px 20px;
+  font-size: 17px;
+  color:white;
+  border-radius:50px;
+  margin-inline:10px;
+}
+.corps .gauche .boutons .btncontact:hover{
+  background-color: rgb(230, 134, 10);
+  color:white;
+}
+
+.corps .gauche .boutons .btnCV{
+  background-color: rgb(162, 183, 223);
+  /*background-color:leaner-gradian(30deg, red,blue);*/
+  border:none;
+  padding:10px 20px;
+  font-size: 17px;
+  color:white;
+  border-radius:50px;
+  margin-inline:10px;
+}
+.corps .gauche .boutons .btnCV:hover{
+  background-color: rgb(91, 107, 128);
+}
+
+.corps .gauche .reseaux{
+  position: absolute;
+  bottom:20px;
+  display:flex;
+}
+.corps .gauche .reseaux h3{
+  margin-inline:10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.corps .gauche .reseaux h3:hover{
+  text-decoration: overline;
+  cursor: pointer;
+  color:rgb(230, 169, 1);
+}
+
+/*responsivité */
+
+@media screen and (max-width:768px){
+  .entete .titre{
+    width: 50%;
+    text-align: center;
+  }
+
+  .entete .nav{
+    width: 20%;
+  }
+  .navigation .TopMenu{
+    display: none;
+  }
+  .btn_mobile{
+    background-color: transparent;
+    border:none;
+    font-size: 25px;
+    position: absolute;
+    right:20px;
+    top:15px;
+    display: block;
+  }
+  .MobileNav{
+    width: 80%;
+    height:100vh;
+    text-align: left;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition: 0.5s;
+    z-index: 999;
+    background-color: rgba(198, 205, 211, 0.950);
+  }
+  .MobileNav .TopMenu{
+    display: inline-block;
+  }
+  .MobileNav li{
+    margin-inline:20px;
+    font-size: 25px;
+    font-weight: 540;
+    list-style:square;
+    transition: 1s;
+  }
+
+  .corps{
+    display: block;
+    padding: 5px;
+  }
+  .corps .gauche{
+    width: 100%;
+  }
+  .corps .droite{
+    width: 100%;
+  }
+  .corps .droite img{
+    width: 70%;
+  }
+  .corps .droite img:hover{
+    rotate: 5deg;
+  }
+  .corps .gauche h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 0px;
+  }
+  .corps .gauche .present{
+    font-size:30px;
+    margin: 0px;
+    color:rgb(185, 207, 226);
+  }
+  .corps .gauche .present span{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0px;
+    color:rgb(91, 107, 128);
+  }
+  .corps .gauche .dev{
+    font-size: 30px;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    margin:10px 0px;
+    color:rgb(230, 134, 10);
+  }
+  .corps .gauche p{
+    font-size: 17px;
+    word-wrap: normal;
+  }
+  .corps .gauche .boutons .btncontact{
+    background-color: rgb(115, 134, 170);
+    border:none;
+    padding:10px 10px;
+    font-size: 17px;
+    color:white;
+    border-radius:50px;
+    margin-inline:5px;
+  }
+  .corps .gauche .boutons .btncontact:hover{
+    background-color: rgb(230, 134, 10);
+    color:white;
+  }
+  
+  .corps .gauche .boutons .btnCV{
+    background-color: rgb(162, 183, 223);
+    border:none;
+    padding:10px 10px;
+    font-size: 17px;
+    color:white;
+    border-radius:50px;
+    margin-inline:5px;
+  }
+  .corps .gauche .boutons .btnCV:hover{
+    background-color: rgb(91, 107, 128);
+  }
+  
+  .corps .gauche .reseaux{
+    position: absolute;
+    bottom:20px;
+    display:flex;
+    position: fixed;
+    background-color:white;
+    border-radius: 50px;
+  }
+  .corps .gauche .reseaux h3{
+    margin-inline:10px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .corps .gauche .reseaux h3:hover{
+    text-decoration: overline;
+    cursor: pointer;
+    color:rgb(230, 169, 1);
+  }
+  
+  
+}
+
+
