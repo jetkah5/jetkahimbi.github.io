@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    transition: all .3s ease;
+}
+.container{
+    padding: 0px 10%;
+    padding-top: 10%;
+}
+
+.entete{
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px 10%;
+  }
+  .entete h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding:10px;
+    box-shadow: 0px 0px 5px rgb(64, 81, 104);
+    transform: rotate(7deg);
+    background-color: rgba(255, 255, 255, 0.404);
+  }
+  .entete h1:hover{
+    border:3px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px white;
+    background-color: inherit;
+    transform: rotate(0deg);
+    cursor:grab;
+  }
+  .entete .nav{
+    text-align: right;
+  }
+  .navigation .TopMenu{
+    display: inline-flex;
+  }
+  .navigation .TopMenu li{
+    margin: 0px 20px;
+    font-size: 18px;
+    font-weight: 540;
+    list-style: none;
+  }
+  .navigation li:hover{
+    font-weight: 700;
+    cursor: pointer;
+    color:rgb(230, 169, 1);
+    text-decoration:overline;
+  }
+  
+  .btn_mobile{
+    display: none;
+  }
+  
+  .dflex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gauche{
+    width: 50%;
+  }
+  .droite{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .droite img{
+    width: 80%;
+    margin-top: -40px;
+  }
+  
+  .gauche h1{
+    font-size: 50px;
+  }
+  .gauche .present{
+    font-size:40px;
+    font-weight: normal;
+    color:rgb(185, 207, 226);
+  }
+  .gauche .present span{
+    font-size: 60px;
+    font-weight: 700;
+    color:rgb(91, 107, 128);
+  }
+  .gauche .present s{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .gauche .dev{
+    font-size: 40px;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    margin:10px;
+    color:rgb(230, 134, 10);
+  }
+  .gauche p{
+    font-size: 20px;
+  }
+  .gauche .boutons{
+    margin: 30px 0px;
+  }
+  .gauche .boutons button{
+    border:none;
+    padding:15px 20px;
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+    border-radius:50px;
+    margin:0px 10px;
+  }
+  .gauche .boutons .btncontact{
+    background-image:linear-gradient(60deg,rgb(239, 239, 245),70%,rgb(230, 134, 10));
+    box-shadow: 0px 0px 10px rgb(115, 134, 170);
+  }
+  .gauche .boutons .btnCV{
+    color:rgb(230, 134, 10);
+    background-image:linear-gradient(30deg, rgb(115, 134, 170),rgb(239, 239, 245));
+    box-shadow: 0px 0px 10px rgb(115, 134, 170);
+  }
+  .gauche .boutons button:hover{
+    cursor: pointer;
+    transform: rotate(2deg);
+  }
+  .gauche .reseaux{
+    position: absolute;
+    bottom:20px;
+    display:flex;
+  }
+  .gauche .reseaux h3{
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid rgb(115, 134, 170);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .gauche .reseaux h3 span{
+    font-size: 15px;
+    position: absolute;
+    top:-50px;
+    background-color: white;
+    color:rgb(230, 169, 1);
+    border: 1px solid rgb(230, 169, 1);
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: max-content !important;
+    visibility: hidden;
+  }
+  .gauche .reseaux h3 span::before{
+    position: absolute;
+    bottom: -17px;
+    left:45%;
+    width: 5px;
+    height: 13px;
+    border-radius: 20px;
+    content: "";
+    background-color: white;
+    border:1px solid rgb(230, 169, 1);
+  }
+  .gauche .reseaux h3:hover{
+    background-color: rgb(230, 169, 1);
+    color:rgb(255, 255, 255);
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgb(115, 134, 170);
+  }
+  .gauche .reseaux h3:hover span{
+    visibility: visible;
+    box-shadow: 0px 0px 10px rgb(115, 134, 170);
+    cursor:text;
+  }
+  .title{
+    color:rgb(115, 134, 170);
+    font-size: 30px;
+  }
+  .space-between{
+    justify-content: space-between;
+  }
+  .compentences{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .compentences .left{
+    width: 50%;
+    padding: 0px 20px;
+  }
+  .compentences .right{
+    width: 50%;
+  }
+  .compentences .left img{
+    width: 100%;
+  }
+  .compentences .right h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color:rgb(230, 169, 1);
+    opacity: .30;
+    margin-top: 10px;
+  }
+  .compentences .right .l, .r{
+    width: 50%;
+  }
+  .compentences .right ul{
+    padding: 0px;
+  }
+  .compentences .right ul li{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+  }
+  .compentences .right ul li .progress{
+    margin:auto 10px;
+    width: 120px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: rgb(162, 183, 223);
+  }
+
+  .progressbar{
+    display: flex;
+    width:120px;
+    height:6px;
+    border-radius: 20px;
+  }
+  .progressbar .pourcentage{
+    font-size: 12px;
+    margin-top: 3px;
+    color:rgb(230, 169, 1);
+  }
+
+  .Projets{
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .Projets .title{
+    margin-bottom: 20px;
+  }
+  .Projets .bloc{
+    width: 24%;
+    height: 200px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgb(115, 134, 170);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .Ecrire{
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  /*responsivité */
+  @media screen and (max-width:768px){
+    .entete .titre{
+      width: 50%;
+      text-align: center;
+    }
+  
+    .entete .nav{
+      width: 20%;
+    }
+    .navigation .TopMenu{
+      display: none;
+    }
+    .btn_mobile{
+      background-color: transparent;
+      border:none;
+      font-size: 25px;
+      position: absolute;
+      right:20px;
+      top:15px;
+      display: block;
+    }
+    .MobileNav{
+      width: 80%;
+      height:100vh;
+      text-align: left;
+      position: absolute;
+      top:0px;
+      left:0px;
+      transition: 0.5s;
+      z-index: 999;
+      background-color: rgba(198, 205, 211, 0.950);
+    }
+    .MobileNav .TopMenu{
+      display: inline-block;
+    }
+    .MobileNav li{
+      margin-inline:20px;
+      font-size: 25px;
+      font-weight: 540;
+      list-style:square;
+      transition: 1s;
+    }
+  
+    .corps{
+      display: block;
+      padding: 5px;
+    }
+    .corps .gauche{
+      width: 100%;
+    }
+    .corps .droite{
+      width: 100%;
+    }
+    .corps .droite img{
+      width: 70%;
+    }
+    .corps .droite img:hover{
+      rotate: 5deg;
+    }
+    .corps .gauche h1{
+      font-size: 50px;
+      font-weight: 800;
+      margin-bottom: 0px;
+    }
+    .corps .gauche .present{
+      font-size:30px;
+      margin: 0px;
+      color:rgb(185, 207, 226);
+    }
+    .corps .gauche .present span{
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0px;
+      color:rgb(91, 107, 128);
+    }
+    .corps .gauche .dev{
+      font-size: 30px;
+      font-weight: 500;
+      font-family:'Courier New', Courier, monospace;
+      margin:10px 0px;
+      color:rgb(230, 134, 10);
+    }
+    .corps .gauche p{
+      font-size: 17px;
+      word-wrap: normal;
+    }
+    .corps .gauche .boutons .btncontact{
+      background-color: rgb(115, 134, 170);
+      border:none;
+      padding:10px 10px;
+      font-size: 17px;
+      color:white;
+      border-radius:50px;
+      margin-inline:5px;
+    }
+    .corps .gauche .boutons .btncontact:hover{
+      background-color: rgb(230, 134, 10);
+      color:white;
+    }
+    
+    .corps .gauche .boutons .btnCV{
+      background-color: rgb(162, 183, 223);
+      border:none;
+      padding:10px 10px;
+      font-size: 17px;
+      color:white;
+      border-radius:50px;
+      margin-inline:5px;
+    }
+    .corps .gauche .boutons .btnCV:hover{
+      background-color: rgb(91, 107, 128);
+    }
+    
+    .corps .gauche .reseaux{
+      position: absolute;
+      bottom:20px;
+      display:flex;
+      position: fixed;
+      background-color:white;
+      border-radius: 50px;
+    }
+    .corps .gauche .reseaux h3{
+      margin-inline:10px;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .corps .gauche .reseaux h3:hover{
+      text-decoration: overline;
+      cursor: pointer;
+      color:rgb(230, 169, 1);
+    }
+    
+    
+  }
+  
+  
+  
